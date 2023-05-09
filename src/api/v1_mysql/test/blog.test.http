@@ -1,0 +1,38 @@
+### GETALL
+GET http://192.168.1.26:3131/v1/mysql/blog/all
+Content-Type: application/json
+
+### Find By Tile
+GET http://192.168.1.26:3131/v1/mysql/blog/find?title=title
+Content-Type: application/json
+
+### CREATE BLOG
+POST http://192.168.1.26:3131/v1/mysql/blog/create
+Content-Type: application/json
+
+{
+      "title": "new blogs",
+      "description": "world cup",
+      "type": "sport",
+      "tag": "sport"
+}
+
+### UPDATE BLOG
+POST http://192.168.1.26:3131/v1/mysql/blog/update
+Content-Type: application/json
+
+{
+    "id": 1,
+      "title": "Highlight World Cup Quatar 2022",
+      "description": "world cup Quatar 2022",
+      "type": "sport and emtertainment",
+      "tag": "sport and emtertainment"
+}
+
+### DELETE BLOG
+POST http://192.168.1.26:3131/v1/mysql/blog/delete
+Content-Type: application/json
+
+{
+    "id": 8
+}

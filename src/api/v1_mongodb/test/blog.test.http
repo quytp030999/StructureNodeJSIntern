@@ -1,0 +1,38 @@
+### GETALL
+GET http://192.168.1.21:3131/v1/mongo/blog/all
+Content-Type: application/json
+
+### Find By Tile
+GET http://192.168.1.21:3131/v1/mongo/blog/find?title=Cup
+Content-Type: application/json
+
+### CREATE BLOG
+POST http://192.168.1.21:3131/v1/mongo/blog/create
+Content-Type: application/json
+
+{
+      "title": "new blogs",
+      "description": "world cup",
+      "type": "sport",
+      "tag": "sport"
+}
+
+### UPDATE BLOG
+POST http://192.168.1.21:3131/v1/mongo/blog/update
+Content-Type: application/json
+
+{
+    "id": "637c74be5c0751ebe42adec2",
+      "title": "Highlight World Cup Quatar 2022",
+      "description": "world cup Quatar 2022",
+      "type": "sport and entertainment",
+      "tag": "sport and entertainment"
+}
+
+### DELETE BLOG
+POST http://192.168.1.21:3131/v1/mongo/blog/delete
+Content-Type: application/json
+
+{
+    "id": "637c7447bdbbbd840f35fad0"
+}
